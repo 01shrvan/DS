@@ -1,4 +1,6 @@
 ---
+import BigLogo from "../assets/BigLogo.astro";
+
 const footerLinks = [
   {
     title: "Navigation",
@@ -32,6 +34,7 @@ const footerLinks = [
 
 <footer class="overflow-hidden">
   <div class="px-8 pt-12 pb-24 max-w-xl mx-auto">
+    <BigLogo class="lg:-mx-4 opacity-10 absolute inset-0 pointer-events-none" />
     <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
       {
         footerLinks.map((section) => (
