@@ -5,31 +5,26 @@ const footerLinks = [
     links: [
       { label: "Work", href: "#work" },
       { label: "How it works", href: "#how" },
+      { label: "Services", href: "#services" },
       { label: "Pricing", href: "#pricing" },
       { label: "FAQ", href: "#faq" },
     ],
   },
+
   {
-    title: "Resources",
+    title: "Connect",
     links: [
-      {
-        label: "Lexington Themes.",
-        href: "https://www.lexingtonthemes.com",
-      },
-      {
-        label: "Oxbow UI",
-        href: "https://www.oxbowui.com",
-      },
+      { label: "LinkedIn", href: "https://linkedin.com/company/dreamskrin" },
+      { label: "Twitter", href: "https://twitter.com/dreamskrin" },
+      { label: "GitHub", href: "https://github.com/dreamskrin" },
     ],
   },
 
   {
-    title: "Socials",
+    title: "Contact",
     links: [
-      {
-        label: "@Mike_Andreuzza",
-        href: "https://twitter.com/Mike_Andreuzza",
-      },
+      { label: "hello@dreamskrin.com", href: "mailto:hello@dreamskrin.com" },
+      { label: "Book a Call", href: "#contact" },
     ],
   },
 ];
@@ -37,18 +32,18 @@ const footerLinks = [
 
 <footer class="overflow-hidden">
   <div class="px-8 pt-12 pb-24 max-w-xl mx-auto">
-    <div class="grid grid-cols-2 lg:grid-cols-3">
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
       {
         footerLinks.map((section) => (
           <div>
-            <h3 class="text-base-900 text-sm">{section.title}</h3>
+            <h3 class="text-base-900 text-sm font-medium">{section.title}</h3>
             <ul
               role="list"
               class="mt-2 text-xs flex flex-col gap-1 text-base-600"
             >
               {section.links.map((link) => (
                 <li>
-                  <a href={link.href} class="hover:text-base-900">
+                  <a href={link.href} class="hover:text-base-900 transition-colors">
                     {link.label}
                   </a>
                 </li>
@@ -59,12 +54,13 @@ const footerLinks = [
       }
     </div>
     <div class="mt-12">
-      <div class="text-sm text-base-900">
+      <div class="text-sm text-base-900 font-medium">
         © 2025 DreamSkrin. All rights reserved.
       </div>
-      <p class="text-xs text-base-600 mt-1 text-balance">
-        DreamSkrin is not affiliated with Stripe, Breeew, Astro, or Tailwind
-        Labs, nor is it endorsed or sponsored by them.
+      <p class="text-xs text-base-600 mt-1 text-balance leading-relaxed">
+        DreamSkrin delivers integrated solutions across design, development, AI,
+        automation, and strategy. We help businesses innovate, optimize, and scale 
+        with technology built for the future.
       </p>
     </div>
   </div>

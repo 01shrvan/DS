@@ -7,47 +7,50 @@ import OrchestraLogo from "@/components/assets/OrchestraLogo.astro";
 
 const pricingTiers = [
   {
-    title: "Design + Dev",
-    price: "$1999",
-    note: "/monthly",
-    subnote: "USD + Local tax",
+    title: "Full Suite Deployment",
+    price: "Custom",
+    note: "/enterprise",
+    subnote: "Pricing on request",
     description:
-      "Ideal for startups requiring design and front-end development services.",
-    highlight: "Same as in Design plus:",
+      "Ideal for enterprises seeking end-to-end orchestration with the complete Luminera.ai platform.",
+    highlight: "Includes:",
     features: [
-      "Astro & Tailwind Code",
-      "Clean & accessible code",
-      "Essential SEO",
-      "Support & maintenance",
+      "LumiEngage → Customer data & engagement intelligence",
+      "LumiOrchestrate → Automated workflows & decision execution",
+      "LumiShield → Fraud detection & compliance protection",
+      "LumiInsight → Predictive analytics & optimization",
+      "LumiResilience → System health & observability",
     ],
   },
   {
-    title: "Design",
-    price: "$1499",
-    note: "/monthly",
-    subnote: "USD + Local tax",
+    title: "Modular Solutions",
+    price: "Flexible",
+    note: "/per module",
+    subnote: "Pricing on request",
     description:
-      "Ideal for emerging businesses requiring continuous design assistance.",
-    highlight: "What you get:",
+      "Perfect for businesses that want to start small and scale. Deploy individual layers of Luminera.ai to solve immediate pain points.",
+    highlight: "Choose from:",
     features: [
-      "Design in Figma",
-      "1 request at the time",
-      "Unlimited feedback",
-      "Delivery within 2–3 days",
+      "Customer engagement (LumiEngage)",
+      "Workflow automation (LumiOrchestrate)",
+      "Fraud & compliance (LumiShield)",
+      "Business intelligence (LumiInsight)",
+      "Resilience & observability (LumiResilience)",
     ],
   },
   {
-    title: "One off",
-    price: "$999",
+    title: "Growth Consultation",
+    price: "Free",
     note: "",
-    subnote: "USD + Local tax",
+    subnote: "",
     description:
-      "For anyone who only needs a quick landing page or just a quick redesign!",
+      "For businesses exploring AI adoption. Start with a consultation to map challenges, opportunities, and potential ROI.",
     highlight: "What you get:",
     features: [
-      "2–3 days turnaround time",
-      "Design or development",
-      "1 revision included",
+      "AI readiness insights",
+      "Key automation opportunities",
+      "ROI projections & roadmap",
+      "Tailored adoption strategy",
     ],
   },
 ];
@@ -58,6 +61,7 @@ const pricingTiers = [
     <div
       class="grid grid-cols-1 gap-px md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
     >
+      <!-- Intro card -->
       <section
         class="col-span-full lg:col-span-1 bg-white flex flex-col justify-between rounded-3xl h-full text-base-900 p-8"
       >
@@ -68,40 +72,29 @@ const pricingTiers = [
             <TailwindLogo class="h-3 text-base-900" />
           </div>
           <p class="text-2xl tracking-tight font-medium text-base-900 mt-4">
-            Tailored design & <span class="md:block">dev packages</span>
+            Tailored enterprise <span class="md:block">AI solutions</span>
           </p>
           <p class="text-xs text-base-500 mt-2">
-            Flexible pricing to enhance your online presence at every stage.
+            Flexible engagement models to align with your business scale, pace,
+            and ROI goals.
           </p>
         </div>
-        <div>
-          <div class="flex items-center gap-2 text-base-900">
-            <p class="text-xs">1 spots available</p>
-            <div class="h-2 w-2 rounded-full bg-black"></div>
-            <div class="h-2 w-2 rounded-full border border-black"></div>
-          </div>
-          <div class="border-t border-base-200 flex flex-col pt-2 mt-2">
-            <span class="text-xs text-base-600 font-normal">
-              Project management with <span
-                class="italic text-base-900 font-medium">Orchestra</span
-              >, secure payments with <span
-                class="italic text-base-900 font-medium">Stripe</span
-              > and the freedom of
-              <span class="italic text-base-900 font-medium">
-                Canceling your subscription anytime:</span
-              >
-            </span>
-            <div class="inline-flex items-center gap-2 mt-4 text-base-900">
-              <OrchestraLogo class="h-4 text-base-900" />
-              <span aria-hidden="true" class="text-base-900 pointer-events-none"
-                >/</span
-              >
-              <StripeLogo class="h-4 text-base-900" />
-            </div>
+        <div class="border-t border-base-200 flex flex-col pt-2 mt-2">
+          <span class="text-xs text-base-600 font-normal">
+            Luminera.ai ensures seamless deployment, secure integrations, and
+            measurable growth for modern enterprises.
+          </span>
+          <div class="inline-flex items-center gap-2 mt-4 text-base-900">
+            <OrchestraLogo class="h-4 text-base-900" />
+            <span aria-hidden="true" class="text-base-900 pointer-events-none"
+              >/</span
+            >
+            <StripeLogo class="h-4 text-base-900" />
           </div>
         </div>
       </section>
 
+      <!-- Pricing tiers -->
       {
         pricingTiers.map((tier) => (
           <section class="bg-white flex flex-col justify-between rounded-3xl h-full text-base-900 p-8">
@@ -144,60 +137,42 @@ const pricingTiers = [
         ))
       }
 
+      <!-- Good to know -->
       <section
         class="h-full p-8 flex flex-col col-span-full md:col-span-1 xl:col-span-2 justify-between order-last md:order-none bg-white rounded-3xl"
       >
-        <p class="text-lg text-base-900 lg:text-xl">Good to know</p>
+        <p class="text-lg text-base-900 lg:text-xl">Why choose DreamSkrin</p>
         <div class="mt-4">
-          <p class="text-xs text-base-500 font-normal">
-            DreamSkrin focuses exclusively on design and front-end development.
-            The following services are not included:
-            <span class="text-base-900 italic font-medium">design systems</span
-            >,
-            <span class="text-base-900 italic font-medium">3D</span>,
-            <span class="text-base-900 italic font-medium">prototypes</span>,
-            <span class="text-base-900 italic font-medium">mobile apps</span>,
-            <span class="text-base-900 italic font-medium">illustrations</span>,
-            <span class="text-base-900 italic font-medium">CMS setups</span>,
-            <span class="text-base-900 italic font-medium">back-end work</span>,
-            <span class="text-base-900 italic font-medium">hosting</span>,
-            <span class="text-base-900 italic font-medium">marketing</span>,
-            <span class="text-base-900 italic font-medium">copywriting</span>,
-            <span class="text-base-900 italic font-medium">animations</span>,
-            and
-            <span class="text-base-900 italic font-medium"
-              >overly complex builds</span
-            >.
-          </p>
-
-          <div class="border-t border-base-200 flex flex-col pt-4 mt-4">
-            <p class="text-xs text-base-400">
-              Minimal supports English, Spanish, Italian, and Swedish. Pick
-              what’s comfortable!
-            </p>
-          </div>
+          <ul class="text-xs text-base-500 font-normal list-disc pl-4 space-y-1">
+            <li><span class="text-base-900 font-medium">AI-first, data-driven</span> intelligence for decisive action</li>
+            <li><span class="text-base-900 font-medium">Seamless integration</span> — go live in hours</li>
+            <li><span class="text-base-900 font-medium">ROI-centric design</span> — measurable impact within weeks</li>
+            <li><span class="text-base-900 font-medium">Resilience built in</span> — continuous performance & compliance</li>
+            <li><span class="text-base-900 font-medium">Modular & unified</span> — scale at your own pace</li>
+          </ul>
         </div>
       </section>
 
+      <!-- Book a consultation -->
       <section
         class="h-full rounded-3xl justify-between col-span-full lg:col-span-1 xl:col-span-2 bg-white p-8"
       >
         <div class="flex flex-col justify-between h-full">
-          <h3 class="text-lg text-base-900 lg:text-xl">Book an intro call</h3>
+          <h3 class="text-lg text-base-900 lg:text-xl">Book a growth consultation</h3>
           <p class="text-xs text-base-500 mt-4 text-balance">
-            Not sure if it’s the right fit? Let’s talk. Book a quick intro call
-            and get a feel for how Minimal works.
+            Your brand has the vision. Luminera.ai has the engine to accelerate
+            it. Book a free consultation to unlock your full growth potential.
           </p>
 
           <a
             href="#_"
             class="text-sm text-base-900 hover:text-blue-500 mt-4 font-medium"
           >
-            Book a call
+            Book now
           </a>
 
           <div class="border-t border-base-200 pt-4 mt-4">
-            <p class="text-xs text-base-400">(Europe/Helsinki) Time</p>
+            <p class="text-xs text-base-400">(IST) Time</p>
           </div>
         </div>
       </section>

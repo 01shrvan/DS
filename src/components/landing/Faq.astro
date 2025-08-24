@@ -1,34 +1,34 @@
 ---
 const faqs = [
   {
-    question: "Who runs the studio?",
+    question: "What is DreamSkrin?",
     answer:
-      "My name is Michael Andreuzza, UI Designer and Front-end Developer. I also build products for myself. Learn more at michaelandreuzza.com.",
+      "DreamSkrin is an AI-first company building proactive, intelligent systems that transform operations. Our flagship platform, Luminera.ai, unifies engagement, workflows, analytics, and resilience into one adaptive ecosystem.",
   },
   {
-    question: "How do we communicate and manage the project?",
+    question: "How do we get started?",
     answer:
-      "Minimal uses Breeew for project management, ensuring seamless communication and collaboration.",
+      "You can begin with a free growth consultation. We’ll analyze your challenges, identify opportunities for automation, and propose a tailored roadmap for ROI-driven AI adoption.",
   },
   {
-    question: "How quickly will I get some work done?",
+    question: "How does Luminera.ai integrate with our systems?",
     answer:
-      "Expect the initial concept within 2–3 days. For larger projects, timelines may extend up to 4 weeks. Revisions are unlimited until you're satisfied.",
+      "Luminera.ai offers seamless, plug-and-play integration with CRMs, e-commerce platforms, payment gateways, and communication tools like WhatsApp, Twilio, and more. Deployment is fast and requires no lengthy IT overhauls.",
   },
   {
-    question: "Why do you only have two spots?",
+    question: "What results can we expect?",
     answer:
-      "To ensure high-quality results and focused attention, minimal only takes on two projects at a time. This allows for timely and dedicated work.",
+      "Our clients typically see measurable impact within weeks—conversion uplift, reduced fraud losses, improved efficiency, and stronger customer retention. Every deployment is ROI-focused.",
   },
   {
-    question: "What if I don’t like the design?",
+    question: "How is security and compliance ensured?",
     answer:
-      "Your satisfaction is the priority. That’s why minimal offers unlimited design requests and revisions.",
+      "Luminera.ai includes LumiResilience, which continuously safeguards data with encryption, consent management, differential privacy, and GDPR-ready controls. Proactive observability ensures uninterrupted performance.",
   },
   {
-    question: "Are there any refunds?",
+    question: "What support do you provide after deployment?",
     answer:
-      "Due to the creative effort and research required, refunds aren't offered once work begins. However, if no work has started and the fit isn’t right after our initial discussion, you're eligible for a 100% refund.",
+      "We provide continuous monitoring, automated rollbacks for risky updates, and human-in-loop support for edge cases. Our goal is to keep your systems proactive, resilient, and always optimized.",
   },
 ];
 ---
@@ -36,19 +36,17 @@ const faqs = [
 <section>
   <div class="px-8 py-12 max-w-xl mx-auto">
     <h2 class="text-4xl tracking-tight text-base-900 text-balance font-medium">
-      The answers to the most <span class="block"
-        >popular frequent questions</span
-      >
+      Frequently asked <span class="block">questions</span>
     </h2>
     <p class="mt-2 text-sm text-base-600">
       Can't find your answer? Send an
       <a
         class="text-blue-500 hover:text-base-900 duration-200"
-        href="mailto:michael@andreuzza.com"
+        href="mailto:mail@dreamskrin.com"
       >
         email
       </a>
-      and minimal will get back to you.
+      and our team will get back to you.
     </p>
 
     <div
@@ -57,7 +55,7 @@ const faqs = [
       {
         faqs.map((faq, i) => (
           <details class="px-8 py-6 group">
-            <summary class="cursor-pointer text-sm font-medium  flex justify-between items-center">
+            <summary class="cursor-pointer text-sm font-medium flex justify-between items-center">
               {faq.question}
               <svg
                 class="size-4 ml-2 transform transition-transform group-open:rotate-180"
